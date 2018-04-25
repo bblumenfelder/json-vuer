@@ -1,5 +1,5 @@
 <template>
-    <div class="json-vuer">
+    <div class="json-vuer" v-if="this.json">
         <div class="json-vuer__switch">
             <div class="json-vuer__switch-collapse" v-if="allExpanded" @click="collapseAll">Alle einklappen</div>
             <div class="json-vuer__switch-expand" v-else @click="expandAll">Alle ausklappen</div>
@@ -350,7 +350,7 @@
     .json-vuer__key {
         overflow: hidden;
         padding-left: 2px;
-        min-width: 25%;
+        min-width: 50%;
         background: #eee;
         color: #888;
         transition: background 400ms ease-in-out;
@@ -366,6 +366,7 @@
     .json-vuer__value {
         overflow: visible;
         margin-left: 5px;
+        min-width: 50%;
         padding: 5px;
         background: #fff;
         font-family: "Merriweather";
