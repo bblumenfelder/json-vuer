@@ -1,6 +1,11 @@
 # JSON-Vuer
 A vue-component that renders JSON-data to fully customizable readable table-form.
 
+## Demo
+![alt text](https://raw.githubusercontent.com/bblumenfelder/json-vuer/master/demo/demo_min.jpg)
+
+
+
 ## What is json-vuer?
 JSON-Vuer (JSON-Viewer) is a component for vue.js. You can pass a valid JSON-string as a prop and render it as collapsible and expandable HTML.
 Thus far JSON-Vuer will render nested JSON-data up to seven levels deep.
